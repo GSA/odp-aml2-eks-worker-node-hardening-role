@@ -1,7 +1,7 @@
 ---
-section1_patch: yes
-section2_patch: yes
-section3_patch: yes
+section1_patch: no
+section2_patch: no
+section3_patch: no
 section4_patch: yes
 section5_patch: yes
 
@@ -162,30 +162,30 @@ rule_4_2_9: true
 
 #### SECTION5 ####
   #LEVEL 1 | MASTER
-rule_5_1_1: true
-rule_5_1_2: true
-rule_5_1_4: true
-rule_5_1_5: true
-rule_5_1_6: true
-rule_5_2_1: true
-rule_5_2_2: true
-rule_5_2_3: true
-rule_5_2_4: true
-rule_5_2_5: true
-rule_5_2_7: true
-rule_5_2_8: true
-rule_5_3_1: true
-rule_5_7_1: true
+rule_5_1_1: false
+rule_5_1_2: false
+rule_5_1_4: false
+rule_5_1_5: false
+rule_5_1_6: false
+rule_5_2_1: false
+rule_5_2_2: false
+rule_5_2_3: false
+rule_5_2_4: false
+rule_5_2_5: false
+rule_5_2_7: false
+rule_5_2_8: false
+rule_5_3_1: false
+rule_5_7_1: false
   #LEVEL 2 | MASTER
-rule_5_2_6: true
-rule_5_2_9: true
-rule_5_3_2: true
-rule_5_4_1: true
-rule_5_4_2: true
-rule_5_5_1: true
-rule_5_7_2: true
-rule_5_7_3: true
-rule_5_7_4: true
+rule_5_2_6: false
+rule_5_2_9: false
+rule_5_3_2: false
+rule_5_4_1: false
+rule_5_4_2: false
+rule_5_5_1: false
+rule_5_7_2: false
+rule_5_7_3: false
+rule_5_7_4: false
   #LEVEL 1 | WORKER
 rule_5_1_3: true
 
