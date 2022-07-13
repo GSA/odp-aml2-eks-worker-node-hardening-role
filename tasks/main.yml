@@ -30,32 +30,8 @@
   tags:
       - always
 
-- name: Execute the Control Plane Components tasks
-  import_tasks: section1.yml
-  when: section1_patch | bool
-  tags:
-      - section1
-
-- name: Execute the etcd related tasks
-  import_tasks: section2.yml
-  when: section2_patch | bool
-  tags:
-      - section2
-
-- name: Execute the Control Plane Configuration related tasks
+- name: Execute the Worker Nodes related tasks
   import_tasks: section3.yml
   when: section3_patch | bool
   tags:
       - section3
-
-- name: Execute the Worker Nodes related tasks
-  import_tasks: section4.yml
-  when: section4_patch | bool
-  tags:
-      - section4
-
-- name: Execute the Policies related tasks
-  import_tasks: section5.yml
-  when: section5_patch | bool
-  tags:
-      - section5
