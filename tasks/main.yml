@@ -16,13 +16,6 @@
   tags:
       - always
 
-#- name: Get a list of all service objects
-#  community.kubernetes.k8s_info:
-#    api_version: v1
-#    kind: Service
-#    namespace: default
-#  register: service_list
-
 - name: Check ansible version
   assert:
       that: ansible_version.full is version_compare(min_ansible_version, '>=')
