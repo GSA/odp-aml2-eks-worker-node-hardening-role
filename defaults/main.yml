@@ -37,19 +37,19 @@ is_implemented: false
 #set to false to skip long running tasks
 long_running: false
 
-
 # These variables correspond with the CIS IDs defined in the CIS and allows you to enable/disable specific rules.
 # PLEASE NOTE: These work in coordination with the cat1, cat2, cat3 group variables. You must enable an entire group
 # in order for the variables below to take effect.
 
-# 121 total
+# 4 Total
 
 #### SECTION3 ####
-  #LEVEL 1 | MASTER
-rule_3_1_1: true
-rule_3_1_2: true
-  #LEVEL 2 | MASTER
+  #LEVEL 1 | WORKER
+rule_3_2_1: true
 rule_3_2_2: true
+rule_3_2_6: true
+  #LEVEL 2 | WORKER
+rule_3_2_9: true
 
 # API Server pod specification file
 api_server_pod_specification_file: "/etc/kubernetes/manifests/kube-apiserver.yaml"
