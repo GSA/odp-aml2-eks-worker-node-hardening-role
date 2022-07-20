@@ -31,7 +31,7 @@
     when: before_3_2_1.authentication.anonymous.enabled is defined and before_3_2_1.authentication.anonymous.enabled != false
   - name: "SCORED | 3.2.1 | PATCH | L1 | WORKER | Ensure that the --anonymous-auth argument is set to false"
     copy:
-      content: '{{ after_4_2_1 | to_nice_yaml }}'
+      content: '{{ after_3_2_1 | to_nice_yaml }}'
       dest: "{{ kubelet_config_file }}"
       backup: yes
     when: after_3_2_1 is defined
