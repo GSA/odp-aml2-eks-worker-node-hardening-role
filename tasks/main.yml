@@ -23,6 +23,12 @@
   tags:
       - always
 
+- name: Establish Kubelet Config File with Default Configuration
+  import_tasks: section1.yml
+  when: section1_patch | bool
+  tags:
+      - dependency
+
 - name: Execute the Worker Nodes related tasks
   import_tasks: section3.yml
   when: section3_patch | bool
