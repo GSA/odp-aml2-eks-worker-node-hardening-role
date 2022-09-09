@@ -1,5 +1,0 @@
-- name: Initiate Kube Config Defaults
-  command: kubeadm init phase kubelet-start
-  
-- name: print kube config
-  command: cat /var/lib/kubelet/config.yaml
